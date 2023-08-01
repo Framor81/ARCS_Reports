@@ -89,12 +89,15 @@ python -m pip install --editable
 ## Inference.py
 
 - Inference.py has three main functions. 
-    - The first is label_func which separates the name of any image files into the appropriate directions.
+    - *label_func(filename)* which separates the name of any image files into the appropriate directions.
     - *get_image(filename)* which requests the image that we have recently saved.
-    - *main()*
+    - *main()* which asks for command line arguments and allows the script to run
 
 
-    - Import 
+- To run this script one must install the following packages:
+```
+pip install wandb fastai
+```
 
 
     - Either use learn.export and load_learner or torch.save - Should just use the fastai stuff. Alter Img+command to work with the fastai library and not just pytorch. 
